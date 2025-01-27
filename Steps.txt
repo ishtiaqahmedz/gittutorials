@@ -4,6 +4,7 @@ initialize by "git init"
 check GitHub repository which was created earlier, 
 google "git global setup"
 
+* "git restore README.md" will restore the file to the status of the previous commit
 
 (Now after this I got an idea to copy-paste the entire transcript of this lecture to save time)
 
@@ -17,5 +18,5 @@ To prepare a change to be committed, you "stage" it using the git add command. T
 Committed:
 Once you run git commit, the staged changes are permanently saved in the Git repository history, marking them as "committed". 
 
-
-
+I had authentication issue while pushing the code, it resolved by removing GitHub credentials (under general credential tab), the help is provided by below link:
+https://stackoverflow.com/questions/5335197/gits-famous-error-permission-to-git-denied-to-user
