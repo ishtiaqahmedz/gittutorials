@@ -1,0 +1,21 @@
+install git cli for windows - search in Google
+check if it is installed by typing "git --version" in command prompt
+initialize by "git init"
+check GitHub repository which was created earlier, 
+google "git global setup"
+
+
+(Now after this I got an idea to copy-paste the entire transcript of this lecture to save time)
+
+
+In Git, a file goes through three main stages: untracked (not being tracked by Git), staged (marked for inclusion in the next commit), and committed (permanently saved in the repository history). 
+Explanation:
+Untracked:
+When a new file is created or a modification is made to an existing file, it initially exists in the "untracked" state, meaning Git is not aware of the changes. 
+Staged:
+To prepare a change to be committed, you "stage" it using the git add command. This moves the file from the untracked state to the staging area, where it's ready to be included in the next commit. 
+Committed:
+Once you run git commit, the staged changes are permanently saved in the Git repository history, marking them as "committed". 
+
+
+
