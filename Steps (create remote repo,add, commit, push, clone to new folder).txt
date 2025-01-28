@@ -1,0 +1,471 @@
+install git cli for windows - search in Google
+check if it is installed by typing "git --version" in command prompt
+initialize by "git init"
+check GitHub repository which was created earlier, 
+google "git global setup"
+
+set up global config - user name and user email using git commands
+
+
+
+In Git, a file goes through three main stages: untracked (not being tracked by Git), staged (marked for inclusion in the next commit), and committed (permanently saved in the repository history). 
+Explanation:
+Untracked:
+When a new file is created or a modification is made to an existing file, it initially exists in the "untracked" state, meaning Git is not aware of the changes. 
+Staged:
+To prepare a change to be committed, you "stage" it using the git add command. This moves the file from the untracked state to the staging area, where it's ready to be included in the next commit. 
+Committed: Once you run git commit, the staged changes are permanently saved in the Git repository history, marking them as "committed". 
+
+
+
+I had authentication issue while pushing the code, it resolved by removing GitHub credentials (under general credential tab), the help is provided by below link:
+https://stackoverflow.com/questions/5335197/gits-famous-error-permission-to-git-denied-to-user
+
+
+
+
+* "git restore README.md" will restore the file to the status of the previous commit
+
+
+
+Right now, whenever you create any branches or whenever you create, whenever you create your GitHub
+
+repository, you know by default there will be a branch called as main branch.
+
+So one thing that I am actually going to do is that I am going to make sure that I'll rename this master
+
+branch, and I'll write something like main branch.
+
+command: "git branch - M main"
+Now my master branch has been changed to something called as main branch.
+
+
+But how do we make sure that this local repository is basically connected to our, you know, main repository.
+So once I do a git push it should be able to understand that which is the repository that I need to send it to.
+
+So for that what I'm actually going to do, I'll go back to my repository and I will copy this entire link (which is under code button).
+
+
+command to add remote repo: "git remote add origin <link>"
+
+"git remote -v" shows the origin and remote repository link
+
+
+So that basically means from our local repository we are making sure that we are giving that we are
+
+telling something that, okay, this is the place where you need to commit.
+
+So here I'll just go ahead and write.
+
+I'll say git remote add.
+
+Okay.
+
+And I will write origin.
+
+And then this will basically go to my git of my specific repository.
+
+So here you can see that this has been connected.
+
+Right now if I probably go and see git status everything is fine.
+
+No nothing to commit.
+
+Everything is there already in the staging environment.
+
+If I write git remote this is super important.
+
+Git remote minus v.
+
+Okay, so here you'll be able to see that currently in the local from where I am fetching and pushing.
+
+So from my local basically means anything that I commit to my staging environment that will basically
+
+be in this original origin variable.
+
+Okay.
+
+Origin variable.
+
+So this origin variable is basically indicating my staging environment.
+
+Now finally I will go ahead and push that my code to the repository.
+
+So after for doing that I'll say git push from origin and the by default the repository.
+
+The branch in the main repository is nothing but main.
+
+So once I commit this here, you'll be able to see that the code will be going.
+
+And this is basically saying that okay, at this particular location it has already gone.
+
+Okay.
+
+So I'm just going to, you know, reload this.
+
+So in short over here it will create a new main branch.
+
+And there the commit is basically going.
+
+Okay.
+
+So second way is this one which I will be discussing as we go ahead.
+
+Okay.
+
+Now let me just reload this.
+
+And here you will be able to see that I will be having my Readme file with GitHub tutorials by Krish.
+
+Now the next step.
+
+Any changes that I make?
+
+Let's say I want to make some changes over here.
+
+So I'll open my notepad file.
+
+Let's say on the same file.
+
+I'm making these changes.
+
+Okay.
+
+Let's say I'm making these changes over here.
+
+Let's say here I'm writing one more line.
+
+Subscribe to Fresh Channel.
+
+Okay.
+
+And I'm just saving it.
+
+Let's say there is some information in this readme file.
+
+Now, as soon as I do this.
+
+Now see see the importance of tracking.
+
+If I write git status, you know that the file has changed.
+
+Here you can see that it is saying modified.
+
+Okay.
+
+Modified.
+
+Now there are two important option.
+
+If you feel that this modification is correct you can add this file.
+
+Otherwise what you can do you can restore the previous file.
+
+Okay.
+
+
+
+************************************************
+
+So if I write git restore okay README.md.
+
+Uh, okay.
+
+Restore for spelling is wrong.
+
+But let me first of all close this file.
+
+Okay.
+
+Let me close this file.
+
+Now once I write restore and probably just execute this here, you'll be able to see that the file will
+
+be restored.
+
+How do I know that?
+
+Just open this.
+
+Open your notepad and just drag and drop over here.
+
+Now you can see that the further text that I have written, probably by mistake or nothing.
+
+As such, I don't want to do that cabinet.
+
+You can also revert that or restore the previous file that was actually there in the staging environment.
+
+This is perfect.
+
+Okay, now let's say that I have made some changes.
+
+And here also I'm going to say uh, please subscribe to my channel.
+
+To my channel.
+
+Then what I'll do I'll make this one file.
+
+Let's say I want to make one more file.
+
+And this file is a text document file.
+
+And let's say this will be test one dot txt.
+
+Now here you can see that I have added one file.
+
+And obviously Readme file has been modified.
+
+Now if I probably clear the screen and write git status okay here you'll be able to see okay, this
+
+file is modified and this file needs to be added which is basically an untracked file.
+
+Now since two files are there and I have to make sure that both the changes goes right.
+
+So what I'll do, I will write again git add now instead of writing the file name, I have to make sure
+
+that both the things changes should go and all the files that are present inside all the changes should
+
+go.
+
+So I can write dot.
+
+So once I do that here, you will be able to see that by using this dot all the changes will specifically
+
+go right.
+
+So once we execute git add dot so what will happen.
+
+Both the changes will go ahead.
+
+And now let's go ahead and see with respect to git status.
+
+So now the git status says that okay one file has been modified and one file is a new file okay.
+
+Now we need to do the commit.
+
+So here when I do the commit again I'll write my message.
+
+So I'll say this is my second commit okay.
+
+And here you will be able to see all the changes are there.
+
+Now let me write git remote minus v.
+
+So here you will be able to see okay this is my origin.
+
+This is my thing.
+
+Now let me just go ahead and push this.
+
+So push from origin to main right.
+
+So once I do this here you'll be able to see one text document will also go.
+
+Now if I probably go and reload it here you'll be able to see one more file has come.
+
+And here also it shows the information like how many commit has basically happened.
+
+This is my first commit.
+
+This is my second commit.
+
+So if you probably see the commit details, all the information changes everything.
+
+You'll be able to see it.
+
+So this is how a simple way we can actually do the commit with the help of command line prompt.
+
+Uh, I will also be showing you multiple ways how to do this also.
+
+Okay.
+
+Now let's say there may be situation where you will be saying, Krish, I already have this repository.
+
+How do I clone this?
+
+How do I clone and make sure that and make sure that everything tracking is basically happening?
+
+Let's say I create a folder over here, uh, my new folder.
+
+Okay.
+
+And this specific folder since, uh, no need to create over here because again, this folder will also
+
+keep on getting tracked.
+
+So let's say I have one more folder I create over here.
+
+And this particular folder will have some name get tutorial okay okay.
+
+The same name.
+
+So let's say this is my new folder okay.
+
+Now inside my new folder let's say I go to my I open my command prompt.
+
+Okay.
+
+I open my command prompt.
+
+And here what I'm actually going to do is that, uh, I'll just go to this particular folder location.
+
+So I'll say CD this one.
+
+Okay.
+
+And let's say I've gone to my G drive.
+
+So this is I'm in my new folder.
+
+Now let's say I want to clone this entire repository over here.
+
+So in order to clone it what I will do is that I will go over here, copy this.
+
+Okay.
+
+And I'll say, uh, git clone clone.
+
+And I will just put this git.
+
+So here you'll be able to see in this particular folder location the entire clone will basically happen.
+
+So here you can see good tutorials all the readme file and text one file.
+
+Now I will again go to my command prompt okay I'll go to my git tutorials okay.
+
+Clear the screen.
+
+Now let's say that I want to create a new folder over here or new file over here.
+
+So let's say I created another new text document and I really need to push this.
+
+Now again, if I probably go and see git status over here, you'll be able to see.
+
+Okay.
+
+Untracked file is there.
+
+Right.
+
+So here what I did is I already that there was a repository, I cloned it.
+
+Now I want to commit in that same repository over here.
+
+Right.
+
+So what I'm actually going to do after this is I just write git status I've already written.
+
+So now git add dot um then git commit okay.
+
+Minus m.
+
+This is my third commit.
+
+Third commit okay.
+
+And this commit has already went.
+
+Uh, if I probably see my git status here, nothing is there on the main branch.
+
+So everything is there.
+
+And currently what is my main branch?
+
+If I really want to see if I go and write git branch here, you'll be able to see main branch.
+
+Okay.
+
+And then finally I will try to push this from origin to main.
+
+No need to write two now.
+
+Usually guys for the first time when you do this write git push origin main right.
+
+It will ask you for an authentication since I have already authenticated it.
+
+So you just have to do the authentication to make this push successful.
+
+Because you're there, you need to write the password and all.
+
+Okay.
+
+So now you can see that the commit has actually happened.
+
+I can again reload this page.
+
+And here you'll be able to see new text document again three commits.
+
+This is my third commit.
+
+So you can also clone this.
+
+And you can also start the committing process.
+
+Okay now in this tutorial we have learned all these things.
+
+Uh, in the upcoming videos, what we are going to do is that we are going to see how to revert, uh,
+
+the changes, how to make sure that, you know, everything is tracked parallelly.
+
+I'll also show you the concept of branching.
+
+Can I create my new branch?
+
+You know, because in a bigger project, when you are specifically working, you really need to create
+
+multiple branches when you are working.
+
+And once the changes have happened, you commit into that branch and then we do a pull request from
+
+there, we merge it.
+
+All those things as we go ahead, we will be learning.
+
+All right.
+
+So I hope you like this particular video.
+
+I'll see you all in the next video.
+
+Thank you.
+
+
+Stop
+Play
+Play
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
