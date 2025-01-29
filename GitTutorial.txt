@@ -430,4 +430,8 @@ How to exit a git merge asking for commit message? (git/MERGE_MSG[+] [unix]) "pr
 **************branching******************
 "git branch" for list of existing branches, * will be on the current branch
 "git branch <branch name>" to create  a new branch
-
+to switch to the branch "git checkout <branch name>"
+Now, if we change any document or add any document, it will reflect only in developer branch.
+(i have changed the file "new  file in dev branch.txt" , add . and commit it.)
+now our work in the branch is done so we need to push the changes in the main branch:
+we will checkout to the main branch, in main branch we will run "git merge <branch name>"
