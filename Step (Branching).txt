@@ -4,4 +4,4 @@ Another way to do it: git restore <file name>
 "git diff" diff of what changed but not staged
 "git diff --staged" diff of what is staged but not yet committed
 git commit -m “[descriptive message]” commit your staged content as a new commit snapshot
-
+How to exit a git merge asking for commit message? (git/MERGE_MSG[+] [unix]) "press ESC and Shift+ zz". This command will save file and exit.
