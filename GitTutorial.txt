@@ -428,3 +428,6 @@ How to exit a git merge asking for commit message? (git/MERGE_MSG[+] [unix]) "pr
 
 
 **************branching******************
+"git branch" for list of existing branches, * will be on the current branch
+"git branch <branch name>" to create  a new branch
+
