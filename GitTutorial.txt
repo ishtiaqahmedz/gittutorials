@@ -6,14 +6,12 @@ google "git global setup"
 
 set up global config - user name and user email using git commands
 
-
-
-In Git, a file goes through three main stages: untracked (not being tracked by Git), staged (marked for inclusion in the next commit), and committed (permanently saved in the repository history). 
-Explanation:
+In Git, a file goes through three main stages: untracked (not being tracked by Git), staged (marked for inclusion in the next commit), 
+and committed (permanently saved in the repository history). Explanation:
 Untracked:
 When a new file is created or a modification is made to an existing file, it initially exists in the "untracked" state, meaning Git is not aware of the changes. 
 Staged:
-To prepare a change to be committed, you "stage" it using the git add command. This moves the file from the untracked state to the staging area, where it's ready to be included in the next commit. 
+You "stage" the file using the git add command. This moves the file from the untracked state to the staging area, where it's ready to be included in the next commit. 
 Committed: Once you run git commit, the staged changes are permanently saved in the Git repository history, marking them as "committed". 
 
 
@@ -25,8 +23,6 @@ https://stackoverflow.com/questions/5335197/gits-famous-error-permission-to-git-
 
 
 * "git restore README.md" will restore the file to the status of the previous commit
-
-
 
 Right now, whenever you create any branches or whenever you create, whenever you create your GitHub
 
@@ -419,53 +415,16 @@ And once the changes have happened, you commit into that branch and then we do a
 
 there, we merge it.
 
-All those things as we go ahead, we will be learning.
+********************************** new lesson *******************
 
-All right.
-
-So I hope you like this particular video.
-
-I'll see you all in the next video.
-
-Thank you.
-
-
-Stop
-Play
-Play
+if file is added in git (staged) then it can be unstaged by commmand:
+"git restore --staged <file name>"  (file name is case sensitive)
+Another way to do it: git restore <file name>
+"git diff" diff of what changed but not staged
+"git diff --staged" diff of what is staged but not yet committed
+git commit -m “[descriptive message]” commit your staged content as a new commit snapshot
+How to exit a git merge asking for commit message? (git/MERGE_MSG[+] [unix]) "press ESC and Shift+ zz". This command will save file and exit.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+**************branching******************
